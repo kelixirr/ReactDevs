@@ -1,0 +1,112 @@
+.section {
+  max-width: var(--max-width-content);
+  margin: var(--spacing-xl-5) auto;
+  padding: var(--spacing-lg);
+}
+
+.description {
+  margin-bottom: var(--spacing-xl);
+  text-align: center;
+  color: var(--text-color);
+}
+
+.form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: var(--spacing-xl);
+  background: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.formGroup {
+  margin-bottom: var(--spacing-lg);
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: var(--spacing-sm);
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: var(--spacing-md);
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-base);
+  transition: border-color var(--transition-base);
+}
+
+.formGroup input.error {
+  border-color: #f44336;
+}
+
+.formGroup input.valid {
+  border-color: #4caf50;
+}
+
+.errorMessage {
+  color: #f44336;
+  font-size: var(--font-size-sm);
+  margin-top: var(--spacing-xs);
+  display: block;
+}
+
+.passwordInput {
+  position: relative;
+}
+
+.togglePassword {
+  position: absolute;
+  right: var(--spacing-md);
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  padding: var(--spacing-xs);
+}
+
+.submitButton {
+  width: 100%;
+  padding: var(--spacing-md);
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-base);
+  cursor: pointer;
+  transition: transform var(--transition-base);
+}
+
+.submitButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.strengthIndicator {
+  display: flex;
+  gap: var(--spacing-xs);
+  margin-top: var(--spacing-sm);
+}
+
+.strengthBar {
+  height: 4px;
+  flex: 1;
+  background: var(--border-color);
+  border-radius: var(--border-radius-sm);
+}
+
+.strengthBar.weak { background: #f44336; }
+.strengthBar.medium { background: #ff9800; }
+.strengthBar.strong { background: #4caf50; }
+
+@media (max-width: 48rem) {
+  .form {
+    padding: var(--spacing-md);
+  }
+}
