@@ -15,6 +15,12 @@
   color: var(--text-color);
 }
 
+@media(max-width: 48rem){
+  .section p {
+    text-align: center;
+  }
+}
+
 .cartContainer {
   border-radius: var(--border-radius-md);
   padding: var(--spacing-md);
@@ -58,11 +64,6 @@
   color: var(--primary-color);
 }
 
-.codeSection {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .codeBlock {
   background: var(--text-color);

@@ -67,17 +67,20 @@
   margin-bottom: var(--spacing-md);
 }
 
-@media(max-width: 48rem){
-  .hero h1 {
-      font-size: var(--font-size-heading-hero);
-      margin-bottom: var(--spacing-md);
-    }
-}
-
 .hero p {
   font-size: var(--font-size-subheading);
   margin-bottom: var(--spacing-xl);
   max-width: 800px;
+}
+
+@media(max-width: 48rem) {
+  .hero h1 {
+    font-size: var(--font-size-heading-lg);
+  }
+
+  .hero p {
+    font-size: var(--font-size-base);
+  }
 }
 
 .hero-buttons {

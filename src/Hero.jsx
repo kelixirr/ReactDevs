@@ -8,7 +8,7 @@ export default function Hero() {
       <header className={styles.header}>
         <nav className={styles.nav}>
           <div className={styles.logo}>
-            <img src="../public/react.svg" />
+            <img src="/react.svg" alt="React logo" />
             <span>ReactDevs</span>
           </div>
           <div className={styles.navLinks}>

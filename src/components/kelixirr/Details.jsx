@@ -63,7 +63,6 @@ export default function Details() {
           Once you have created your component, add the Author component as
           shown above to get the credit. Here is the example code:
         </p>
-        <div className={styles.codeSection}>
           <pre className={styles.codeBlock}>
             <code>
               {`import { useState } from "react";
@@ -118,7 +117,6 @@ export default function Cart() {
 }`}
             </code>
           </pre>
-        </div>
         <p style={{ textAlign: "center", marginTop: "2.4rem" }}>
           Good Luck! We can&apos; wait to see you being part of this project!{" "}
           <a
