@@ -73,7 +73,7 @@ export default function SearchFilter() {
         ))}
       </div>
 
-      <Author name="Your Name" githubLink="https://github.com/VictorEZCodes" />
+      <Author name="Victor Ezeanyika" githubLink="https://github.com/VictorEZCodes" />
     </section>
   );
 }
