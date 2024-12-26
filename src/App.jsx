@@ -1,5 +1,6 @@
 
 import Details from './components/kelixirr/Details';
+import ButtonAmadu from './components/amadu/Button';
 import Hero from './Hero' 
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       <Hero />
       <Details />
+      <ButtonAmadu />
     </>
   );
 }
