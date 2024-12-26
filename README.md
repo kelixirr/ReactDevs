@@ -34,6 +34,7 @@ Before you begin contributing to the project, you'll need a few things installed
 5. Use the colors and root variables defined in the index.css file to maintain the design consistency. Don't add any color on your own. 
 6. Use rem for font-size, borders etc. You are free to adjust sizes except for border radius.
 7. Help others and engage with project community. Don't forget to invite more people to this project.
+8. Don't hesistate to ask if you are stuck somewhere.
 
 ## **2. Fork the Repository**
 
