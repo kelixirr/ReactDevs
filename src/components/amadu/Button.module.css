@@ -1,0 +1,11 @@
+.btn {
+    padding: var(--spacing-sm) var(--spacing-md);
+    border: none;
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    background-color: var(--primary-color);
+    }
+.author{
+    margin: 0;
+    font-size: 14px;
+}    
