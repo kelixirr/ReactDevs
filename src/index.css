@@ -1,0 +1,182 @@
+/* global.css */
+
+/* 
+:root variables for consistent styling across the project. 
+Contributors: Please use these variables wherever applicable 
+to maintain uniformity in the design.
+
+- Use the defined variables in your components for styling.
+- Don't overriding global styles.
+- Pro-Tip: if you need to add your size please rem values divisible by 4
+
+*/
+
+:root {
+  /* Color Palette */
+  --primary-color: #1e90ff;
+  /* Primary blue for buttons, links, etc. */
+  --primary-color-hover: #0c7cd5;
+  /* Darker blue for hover states */
+  --secondary-color: #ffd700;
+  /* Secondary yellow for accents */
+  --background-color: #ffffff;
+  /* Default background */
+  --text-color: #333333;
+  /* Default text color */
+  --text-light-color: #666666;
+  /* Subdued text for secondary information */
+  --border-color: #eee;
+  /* Neutral border color */
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  /* Light shadow for cards, modals */
+
+  /* Typography */
+  --font-family: sans-serif;
+  /* Default font family */
+  --font-size-base: 1.6rem;
+  /* Base font size (default text) */
+  --font-size-heading: 2.4rem;
+  --font-size-heading-lg: 3.2rem;
+  --font-size-heading-hero: 4.8rem;
+  /* Size for headings */
+  --font-size-subheading: 2rem;
+  /* Subheadings */
+  --line-height-base: 1.6;
+  /* Line height for readable text */
+  --font-weight-regular: 400;
+  /* Regular font weight */
+  --font-weight-bold: 600;
+  /* Bold font weight */
+
+  /* Spacing */
+  --spacing-xs: 0.4rem;
+  /* Extra small spacing */
+  --spacing-sm: 0.8rem;
+  /* Small spacing */
+  --spacing-md: 1.6rem;
+  /* Medium spacing */
+  --spacing-lg: 2.4rem;
+  /* Large spacing */
+  --spacing-xl: 3.2rem;
+  /* Extra large spacing */
+  --spacing-xl-2: 4.8rem;
+  --spacing-xl-3: 6.4rem;
+  --spacing-xl-4: 8rem;
+  --spacing-xl-5: 9.6rem;
+
+  /* Border Radius */
+  --border-radius-sm: 0.4rem;
+  --border-radius-md: 0.8rem;
+  --border-radius-lg: 1.2rem;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px var(--shadow-color);
+  --shadow-md: 0 4px 8px var(--shadow-color);
+  --shadow-lg: 0 8px 16px var(--shadow-color);
+
+  /* Transitions */
+  --transition-base: 0.3s ease;
+  /* Default smooth transition */
+
+  /* Max Widths */
+  --max-width-container: 1200px;
+  /* Maximum width for containers */
+  --max-width-content: 800px;
+  /* Maximum width for content sections */
+}
+
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* Webkit browsers (Chrome, Safari, Edge, Opera) */
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+
+
+/* Body and Default Layout */
+html {
+  font-size: 62.5%;
+  /* 1rem = 10px for easier calculations */
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  color: var(--text-color);
+  line-height: var(--line-height-base);
+  background-color: var(--background-color);
+  margin: 0 auto;
+}
+
+/* Links */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+/* a:focus {
+  color: var(--primary-color-hover);
+} */
+
+/* Buttons */
+button {
+  font-family: inherit;
+  font-size: var(--font-size-base);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: none;
+  border-radius: var(--border-radius-md);
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: #fff;
+  box-shadow: var(--shadow-sm);
+  transition: background-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+
+/* Inputs */
+input,
+textarea {
+  width: 100%;
+  padding: var(--spacing-sm);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-sm);
+  font-family: inherit;
+  font-size: var(--font-size-base);
+  color: var(--text-color);
+  transition: border-color var(--transition-base);
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: var(--spacing-sm);
+  border: 1px solid var(--border-color);
+}
+
+th {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-weight: var(--font-weight-bold);
+}
+
