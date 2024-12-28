@@ -133,7 +133,6 @@ export default function Cart() {
           </a>
         </p>
       </section>
-      <Author name="Amritesh Kumar" githubLink="https://github.com/kelixirr" />
     </>
   );
 }

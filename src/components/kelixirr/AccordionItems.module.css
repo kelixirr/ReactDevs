@@ -1,0 +1,119 @@
+.AccordionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--spacing-xl-2);
+}
+
+.AccordionH3 {
+  font-size: var(--font-size-heading-hero);
+  text-align: left;
+  margin-left: var(--spacing-lg);
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-xl-4);
+}
+
+.AccordionH3 svg {
+  color: var(--primary-color-hover);
+}
+
+.Accordion {
+  width: var(--max-width-container);
+  padding: var(--spacing-xl);
+}
+
+.AccordionUl {
+  margin: var(--spacing-xl) var(--spacing-xl);
+}
+
+.AccordionUlLi {
+  list-style: none;
+  margin-bottom: var(--spacing-xl);
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--border-color);
+  padding: var(--spacing-lg);
+  background-color: #f7fbff;
+  transition: transform var(--transition-base);
+  cursor: pointer;
+}
+
+.AccordionUlLi svg {
+  color: var(--text-light-color);
+  font-size: 3.2rem;
+  flex-shrink: 0;
+  width: 2.4rem;
+  height: 2.4rem;
+  min-width: 2.4rem;
+}
+
+.AccordionUlLi:hover {
+  border-top: 2px solid var(--primary-color);
+  background-color: #e9f4ff;
+  transform: translateY(-5px);
+}
+
+.AccordionUlLiDiv {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.AccordionUlLiDiv h3 {
+  margin-bottom: var(--spacing-md);
+  font-size: var(--font-size-heading);
+  color: var(--text-light-color);
+  flex: 1;
+  min-width: 0;
+}
+
+.activeLi {
+  border-top: 2px solid var(--primary-color);
+}
+
+.activeLi,
+.activeLi h3,
+.activeLi svg {
+  color: var(--primary-color);
+}
+
+.AccordionUlLi p {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--text-color);
+}
+
+.AccordionUlLi p {
+  width: 90%;
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #272727;
+}
+
+
+@media (max-width: 76.8rem) {
+  .AccordionUlLi svg {
+    width: 2rem;
+    height: 2rem;
+    min-width: 2rem;
+  }
+
+  .AccordionUlLiDiv h3 {
+    font-size: 2rem;
+  }
+
+  .AccordionUl {
+    margin: 0;
+  }
+}
+
+@media (max-width: 45rem) {
+  .AccordionUlLi svg {
+    width: 1.6rem;
+    height: 1.6rem;
+    min-width: 1.6rem;
+  }
+
+  .AccordionUlLiDiv h3 {
+    font-size: 1.8rem;
+  }
+}
