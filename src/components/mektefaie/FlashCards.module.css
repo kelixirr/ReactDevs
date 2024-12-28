@@ -35,3 +35,15 @@
   color: #fff;
   font-weight: var(--font-weight-regular);
 }
+
+@media (max-width: 46rem) {
+  .flashcards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 38rem) {
+  .flashcards {
+    grid-template-columns: 1fr;
+  }
+}
