@@ -1,6 +1,5 @@
-import Author from "./Author";
 import styles from "./Hero.module.css";
-import { FaGithub, FaStar, FaQuestionCircle} from "react-icons/fa";
+import { FaGithub, FaStar, FaQuestionCircle } from "react-icons/fa";
 
 export default function Hero() {
   return (
@@ -51,7 +50,6 @@ export default function Hero() {
           </a>
         </div>
       </section>
-      <Author name="Amritesh Kumar" githubLink="https://github.com/kelixirr" />
     </div>
   );
 }

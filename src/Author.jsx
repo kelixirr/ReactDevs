@@ -16,6 +16,8 @@ export default function Author({ name, githubLink }) {
         gap: "0.75rem",
         fontSize: "0.875rem",
         color: "#222",
+        marginTop: "8rem",
+        marginBottom: "2.4rem"
       }}
     >
       <span>The Above Component Is Created By {name}</span>
