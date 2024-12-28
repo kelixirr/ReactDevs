@@ -85,15 +85,7 @@ function App() {
       </div>
 
       {/* FlashCards Section */}
-      <div
-        style={{
-          padding: '40px 20px',
-          borderTop: '1px solid var(--border-color)',
-          background: 'var(--background-color)',
-        }}
-      >
-        <FlashCards />
-      </div>
+      <FlashCards />
     </>
   )
 }

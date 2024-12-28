@@ -1,45 +1,45 @@
-import styles from '../mektefaie/FlashCards.module.css'
-import Author from '../../Author'
-import { useState } from 'react'
+import styles from "../mektefaie/FlashCards.module.css";
+import Author from "../../Author";
+import { useState } from "react";
 
 const cards = [
   {
     id: 1,
-    question: 'The creator of ReactDevs project?',
-    answer: 'Amritesh Kumar',
+    question: "The creator of ReactDevs project?",
+    answer: "Amritesh Kumar",
   },
   {
     id: 2,
-    question: 'When was ReactDevs project created?',
-    answer: '2024',
+    question: "When was ReactDevs project created?",
+    answer: "2024",
   },
   {
     id: 3,
-    question: 'The first contributor to ReactDevs project?',
-    answer: 'Victor Ezeanyika',
+    question: "The first contributor to ReactDevs project?",
+    answer: "Victor Ezeanyika",
   },
   {
     id: 4,
-    question: 'Best React course?',
+    question: "Best React course?",
     answer: "Jonas Schmedtmann's Ultimate React course on Udemy",
   },
   {
     id: 5,
-    question: 'Best Frontend bootcamp?',
-    answer: 'Scrimba.com',
+    question: "Best Frontend bootcamp?",
+    answer: "Scrimba.com",
   },
   {
     id: 6,
-    question: 'Best Backend bootcamp?',
-    answer: 'Boot.dev',
+    question: "Best Backend bootcamp?",
+    answer: "Boot.dev",
   },
-]
+];
 
 export default function FlashCards() {
-  const [selectedId, setSelectedID] = useState(null)
+  const [selectedId, setSelectedID] = useState(null);
 
   function handleClick(id) {
-    setSelectedID(id === selectedId ? null : id)
+    setSelectedID(id === selectedId ? null : id);
   }
 
   return (
@@ -52,7 +52,7 @@ export default function FlashCards() {
         {cards.map(question => (
           <div
             key={question.id}
-            className={question.id === selectedId ? styles.selected : ''}
+            className={question.id === selectedId ? styles.selected : ""}
             onClick={() => handleClick(question.id)}
           >
             {question.id === selectedId ? question.answer : question.question}
@@ -60,9 +60,9 @@ export default function FlashCards() {
         ))}
       </div>
       <Author
-        name='Mahmoud Ektefaie'
-        githubLink='https://github.com/mektefaie'
+        name="Mahmoud Ektefaie"
+        githubLink="https://github.com/mektefaie"
       />
     </section>
-  )
+  );
 }
