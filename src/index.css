@@ -73,6 +73,7 @@ to maintain uniformity in the design.
   --shadow-sm: 0 2px 4px var(--shadow-color);
   --shadow-md: 0 4px 8px var(--shadow-color);
   --shadow-lg: 0 8px 16px var(--shadow-color);
+  --focus-color: #ffe8dc;
 
   /* Transitions */
   --transition-base: 0.3s ease;
@@ -99,6 +100,15 @@ to maintain uniformity in the design.
   height: 2px;
 }
 
+*:focus {
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--focus-color);
+  outline-offset: 2px;
+}
 
 
 /* Body and Default Layout */
@@ -179,4 +189,3 @@ th {
   color: #fff;
   font-weight: var(--font-weight-bold);
 }
-
