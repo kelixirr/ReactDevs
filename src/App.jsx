@@ -8,6 +8,7 @@ import SearchFilter from "./components/VictorEZCodes/SearchFilter";
 import FormValidator from "./components/VictorEZCodes/FormValidator";
 import AccordionItems from "./components/kelixirr/AccordionItems";
 import FlashCards from "./components/mektefaie/FlashCards";
+import SliderCards from "./components/kelixirr/SliderCards";
 
 function App() {
   const [showToast, setShowToast] = useState(false);
@@ -22,9 +23,11 @@ function App() {
       <ThemeSwitcher />
       <SearchFilter />
       <FormValidator />
+      <FlashCards />
+      <SliderCards />
 
-      {/* Please Add Your Component Above This. Don't Add Div inside App, just component. Keep It Clean*/}
-      {/* Toast Demo Section */}
+      {/* Please Add Your Component Above This Line. Don't Add Div inside App, just component. Keep It Clean*/}
+
       <div
         style={{
           padding: "40px 20px",
@@ -46,7 +49,6 @@ function App() {
           />
         )}
       </div>
-      <FlashCards />
     </>
   );
 }

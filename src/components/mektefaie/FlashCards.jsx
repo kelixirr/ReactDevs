@@ -49,7 +49,7 @@ export default function FlashCards() {
         Interactive Flashcards: click on each card to reveal the answer.
       </p>
       <div className={styles.flashcards}>
-        {cards.map(question => (
+        {cards.map((question) => (
           <div
             key={question.id}
             className={question.id === selectedId ? styles.selected : ""}
