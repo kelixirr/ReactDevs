@@ -7,6 +7,7 @@ import ThemeSwitcher from "./components/VictorEZCodes/ThemeSwitcher";
 import SearchFilter from "./components/VictorEZCodes/SearchFilter";
 import FormValidator from "./components/VictorEZCodes/FormValidator";
 import AccordionItems from "./components/kelixirr/AccordionItems";
+import FlashCards from "./components/mektefaie/FlashCards";
 
 function App() {
   const [showToast, setShowToast] = useState(false);
@@ -45,6 +46,7 @@ function App() {
           />
         )}
       </div>
+      <FlashCards />
     </>
   );
 }

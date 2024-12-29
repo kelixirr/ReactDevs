@@ -6,8 +6,8 @@ import Author from "../../Author";
 export default function Details() {
   const [count, setCount] = useState(0);
 
-  const handleCount = (type) => {
-    setCount((prev) => {
+  const handleCount = type => {
+    setCount(prev => {
       if (type === "increase" && prev < 20) {
         return prev + 1;
       } else if (type === "decrease" && prev > 0) {
@@ -73,7 +73,7 @@ import Author from "../../Author";
 
 export default function Cart() {
   const [count, setCount] = useState(0);
-  
+
   const handleCount = (type) => {
     setCount((prev) => {
       if (type === "increase" && prev < 20) {
@@ -88,7 +88,7 @@ export default function Cart() {
   return (
     <>
       <div className={styles.cartContainer}>
-        <button 
+        <button
           className={styles.cartButton}
           onClick={() => handleCount("decrease")}
           disabled={count === 0}
@@ -103,7 +103,7 @@ export default function Cart() {
             ? \`\${count} - items in your cart\`
             : \`\${count} - Your cart is empty\`}
         </p>
-        <button 
+        <button
           className={styles.cartButton}
           onClick={() => handleCount("increase")}
           disabled={count === 20}
