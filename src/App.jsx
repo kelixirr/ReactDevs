@@ -7,10 +7,11 @@ import ThemeSwitcher from "./components/VictorEZCodes/ThemeSwitcher";
 import SearchFilter from "./components/VictorEZCodes/SearchFilter";
 import FormValidator from "./components/VictorEZCodes/FormValidator";
 import AccordionItems from "./components/kelixirr/AccordionItems";
+import FlashCards from "./components/mektefaie/FlashCards";
 
 function App() {
-  const [showToast, setShowToast] = useState(false)
-  const [progress] = useState(0)
+  const [showToast, setShowToast] = useState(false);
+  const [progress] = useState(0);
 
   return (
     <>
@@ -45,54 +46,9 @@ function App() {
           />
         )}
       </div>
-
-      {/* Progress Bar Demo Section */}
-      <div
-        style={{
-          padding: '40px 20px',
-          borderTop: '1px solid var(--border-color)',
-        }}
-      >
-        <ProgressBar progress={progress} />
-      </div>
-
-      {/* Theme Switcher Section */}
-      <div
-        style={{
-          padding: '40px 20px',
-          borderTop: '1px solid var(--border-color)',
-          background: 'var(--background-color)',
-        }}
-      >
-        <ThemeSwitcher />
-      </div>
-
-      {/* Search Filter Section */}
-      <div
-        style={{
-          padding: '40px 20px',
-          background: 'var(--background-alt)',
-          borderTop: '1px solid var(--border-color)',
-        }}
-      >
-        <SearchFilter />
-      </div>
-
-      {/* Form Validator Section */}
-      <div
-        style={{
-          padding: '40px 20px',
-          borderTop: '1px solid var(--border-color)',
-          background: 'var(--background-color)',
-        }}
-      >
-        <FormValidator />
-      </div>
-
-      {/* FlashCards Section */}
       <FlashCards />
     </>
-  )
+  );
 }
 
 export default App;
