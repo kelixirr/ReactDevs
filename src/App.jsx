@@ -9,7 +9,7 @@ import FormValidator from "./components/VictorEZCodes/FormValidator";
 import AccordionItems from "./components/kelixirr/AccordionItems";
 import FlashCards from "./components/mektefaie/FlashCards";
 import SliderCards from "./components/kelixirr/SliderCards";
-
+import Modal from "./components/sushantpokhrel/Modal";
 function App() {
   const [showToast, setShowToast] = useState(false);
   const [progress] = useState(0);
@@ -25,9 +25,8 @@ function App() {
       <FormValidator />
       <FlashCards />
       <SliderCards />
-
+      <Modal />
       {/* Please Add Your Component Above This Line. Don't Add Div inside App, just component. Keep It Clean*/}
-
       <div
         style={{
           padding: "40px 20px",
@@ -49,6 +48,7 @@ function App() {
           />
         )}
       </div>
+    
     </>
   );
 }
