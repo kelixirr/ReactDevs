@@ -37,8 +37,7 @@
   transition: var(--transition-base);
 }
 .overlay.open {
-   
-  & .modal{
+  & .modal {
     transform: scale(1);
   }
 }
@@ -49,4 +48,16 @@
 }
 .modal p {
   margin-top: var(--spacing-sm);
+}
+@media (max-width: 750px) {
+  .modal {
+    left: 20%;
+    padding: var(--spacing-md);
+    right: 15%;
+  }
+}
+@media (max-width: 425px) {
+  .modal {
+    font-size: 1.1rem;
+  }
 }
