@@ -10,6 +10,7 @@ import AccordionItems from "./components/kelixirr/AccordionItems";
 import FlashCards from "./components/mektefaie/FlashCards";
 import SliderCards from "./components/kelixirr/SliderCards";
 import Modal from "./components/sushantpokhrel/Modal";
+import DropDown from "./components/ronforrestron24/DropDown";
 function App() {
   const [showToast, setShowToast] = useState(false);
   const [progress] = useState(0);
@@ -26,6 +27,7 @@ function App() {
       <FlashCards />
       <SliderCards />
       <Modal />
+      <DropDown />
       {/* Please Add Your Component Above This Line. Don't Add Div inside App, just component. Keep It Clean*/}
       <div
         style={{
@@ -48,7 +50,6 @@ function App() {
           />
         )}
       </div>
-    
     </>
   );
 }
