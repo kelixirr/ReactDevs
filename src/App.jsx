@@ -11,6 +11,7 @@ import FlashCards from "./components/mektefaie/FlashCards";
 import SliderCards from "./components/kelixirr/SliderCards";
 import Modal from "./components/sushantpokhrel/Modal";
 import Header from "./components/kelixirr/Header";
+import Login from "./components/rrusyaidii/Login";
 
 function App() {
   const [showToast, setShowToast] = useState(false);
@@ -29,6 +30,7 @@ function App() {
       <SliderCards />
       <Modal />
       <Header />
+      <Login />
 
       {/* Please Add Your Component Above This Line. Don't Add Div inside App, just component. Keep It Clean*/}
       <div
@@ -52,7 +54,6 @@ function App() {
           />
         )}
       </div>
-    
     </>
   );
 }
