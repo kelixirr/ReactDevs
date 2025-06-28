@@ -1,0 +1,25 @@
+.carousel_container {
+  max-width: var(--max-width-content);
+  margin: var(--spacing-xl) auto;
+}
+ .image_carousel {
+  width: 400px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+.carousel {
+  width: 400px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.slide {
+  width: 400px;
+  display: flex;
+  transition: all var(--transition-base);
+}
+.buttons_container {
+  display: flex;
+  gap: 1em;
+  margin: var(--spacing-sm) 0;
+  justify-content: center;
+}
