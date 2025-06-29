@@ -10,6 +10,7 @@ import AccordionItems from "./components/kelixirr/AccordionItems";
 import FlashCards from "./components/mektefaie/FlashCards";
 import SliderCards from "./components/kelixirr/SliderCards";
 import Modal from "./components/sushantpokhrel/Modal";
+import Carousel from "./components/sushantpokhrel/Carousel";
 import Header from "./components/kelixirr/Header";
 import Login from "./components/rrusyaidii/Login";
 
@@ -29,6 +30,7 @@ function App() {
       <FlashCards />
       <SliderCards />
       <Modal />
+      <Carousel />
       <Header />
       <Login />
 
